@@ -34,10 +34,10 @@ app.get("/livros/:id", (req, res) => {
   res.json(livros[index]);
 });
 
-app.post("/livros", (req, res) => {
-  livros.push(req.body);
-  res.status(201).send("Livro cadastrado com sucesso");
-});
+// app.post("/livros", (req, res) => {
+//   livros.push(req.body);
+//   res.status(201).send("Livro cadastrado com sucesso");
+// });
 
 app.delete("/livros/:id", (req, res) => {
   let { id } = req.params;
